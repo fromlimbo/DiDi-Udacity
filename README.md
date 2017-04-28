@@ -15,7 +15,7 @@ Part4a:https://medium.com/@hengcherkeng/part-4-didi-udacity-challenge-2017-car-a
 Part4b:https://medium.com/@hengcherkeng/part-4b-didi-udacity-challenge-2017-car-and-pedestrian-detection-using-lidar-and-rgb-9f8b910562fc
 
 
-4.25: 下载了源码，尝试按照Anaconda下虚拟环境运行tensorflow的方法。具体按照 https://github.com/hengck23/didi-udacity-2017/issues/1 中zdx3578给的步骤来。但是有一些要注意到：
+4.25-4.26: 下载了源码，尝试按照Anaconda下虚拟环境运行tensorflow的方法。具体按照 https://github.com/hengck23/didi-udacity-2017/issues/1 中zdx3578给的步骤来。但是有一些要注意到：
 
       1）在tensorflow虚拟环境下，opencv3.2.0 的python库名称为cv2.cpython-35m-x86_64-linux-gnu.so,所以要用cv2.so软链接一下
            才能用import cv2
@@ -30,5 +30,10 @@ Part4b:https://medium.com/@hengcherkeng/part-4b-didi-udacity-challenge-2017-car-
       5）重新生成roi_pooling层的时候把make.sh里面的psroi_pooling的内容注释掉了
       
       6）运行python3 train.py的时候注意要开启tensorflow虚拟环境
+      
+ 4.27-4.28: 下载了Didi数据集，按照ros,velodyne，didi-visualize安装顺序安装
+      1) ros:kinetic:http://wiki.ros.org/kinetic/Installation/Ubuntu
+      2) velodyne: https://github.com/markstrefford/udacity-didi-competition/blob/master/velodyne-tutorials/Installing-Velodyne-Drivers-On-Ros-Kinetic-Ubuntu-16.04-LTS-Xenial.md 亲测对kinetic有效，,indigo,jade不知为何无效
+      3）didi-visualize :https://github.com/omgteam/Didi-competition-solution 这个综合了好几个，好使！
       
       
